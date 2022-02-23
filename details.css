@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 0, 0);
+    background-color:transparent;
     border-radius: 0rem 0rem 1rem 1rem;
     margin-left: 30rem;
     /* position: relative; */
@@ -13,7 +13,7 @@
     position: absolute;
 }
 .loginSection.Enable{
-    height: 33rem;
+    height: 25rem;
     width: 20rem;
 }
 .details{
@@ -38,8 +38,8 @@
     /* height: 70rem;
     width: 70rem;
     */
-    height: 10rem;   
-    width: 10rem;      /*hide that to make circle animation*/
+    height: 11rem;   
+    width: 11rem;      /*hide that to make circle animation*/
     border-radius: 50%;
     /* --------- */
     background-color: rgb(236, 236, 236);
@@ -54,20 +54,22 @@
     /* height: 10rem;
     width: 10rem;
     border-radius: 50%; */
+    display: flex;
 }
 .circle{
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 1rem;
+    background-color: rgb(226, 226, 226);
+    margin-bottom: .4rem;
     z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-
+    position: relative;
+    transform: translateX(50px);
 }
 img{
     height: 6.8rem;
@@ -76,6 +78,9 @@ img{
 }
 .details h1{
     z-index: 10;
+    text-align: end;
+    padding-right: 2rem;
+    width: 100%;
 }
 .details p{
     color: rgb(153, 153, 153);
@@ -84,24 +89,19 @@ img{
 .details .tanvir{
     background-color: white;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     z-index: 10;
-    margin-bottom: 1rem;
+    margin: .5rem;
+    width: 100%;
 }
 .details .tanvir p{
-    color: black;
-    z-index: 10;
-}
-.details .tanvir p::before,.details .tanvir p::after{
     position: relative;
-    content: '"';
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(75, 75, 75);
     z-index: 10;
+    /* word-break: break-all; */
 }
 .details a{
-    background-color: rgb(187, 0, 0);
+    background-color: rgb(255, 0, 0);
     color: white;
     width: 100%;
     text-align: center;
@@ -112,5 +112,6 @@ img{
     transition: all ease .2s;
 }
 .details a:hover{
-    background-color: red;
+    background-color: rgb(145, 0, 0);
+    overflow: hidden;
 }
